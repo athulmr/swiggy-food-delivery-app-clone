@@ -1,112 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swiggy Clone</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy Clone</title>
+  </head>
+  <body>
 
-  <section class="location">
-    <h1 class="location__title">
-      Home
-    </h1>
-    <p class="location__address">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <div class="location__offers">
-      Offers
-    </div>
-  </section>
+    <app-location></app-location>
 
-  <section class="banner">
-    <div class="banner__card">
-      <h1 class="banner__card__title">
-        Restaurants
-      </h1>
-      <p class="banner__card__subtitle">
-        Lorem ipsum dolor sit.
-      </p>
-    </div>
+    <app-banner></app-banner>
 
-    <div class="banner__item__card">
-      <img src="" alt="" class="banner__item__card__image">
-      <div class="banner__item__card__title">
-        Anything Delivered
-      </div>
-    </div>
+    <app-top-picks></app-top-picks>
 
-  </section>
+    <app-offers></app-offers>
 
-  <section class="top-picks">
-    <h1 class="top-picks__title">
-      Top Picks For You
-    </h1>
-    <div class="top-picks__restaurant">
-      <img src="" alt="" class="top-picks__restaurant__thump">
-      <div class="top-picks__restaurant__discount">
-        40% off
-      </div>
-      <p class="top-picks__restaurant__name">Lunch Box</p>
-      <p class="top-picks__restaurant__time">40mins</p>
-    </div>
-  </section>
+    <app-coupons></app-coupons>
 
-  <section class="offers">
-    <div class="offers__banner">
-      Image banner will come here
-    </div>
-  </section>
+    <app-spotlight></app-spotlight>
 
-  <section class="coupons">
-    <h1 class="coupons__title">
-      Coupons For You
-    </h1>
-    <div class="coupons__card">
-      <img src="" alt="" class="coupons__card__thump">
-      <div class="coupons__card__name">Upto 50% off</div>
-      <div class="coupons__card__code">Swiggyit</div>
-    </div>
-  </section>
+    <app-popular></app-popular>
 
-  <section class="spotlight">
-    <h1 class="spotlight__title">
-      In the Spotlight!
-    </h1>
-    <p class="spotlight__subtitle">
-      Explore sponsored partner brands
-    </p>
+    <app-navbar></app-navbar>
 
-    <img src="" alt="" class="spotlight__restaurant__thump">
-    <div class="spotlight__restaurant__discount">20% off</div>
-    <div class="spotlight__restaurant__name">Shanmukha Restaurant</div>
-    <div class="spotlight__restaurant__address">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="spotlight__restaurant__info">
-      4.2  |  32 mins | 300 for two
-    </div>
-    <div class="spotlight__restaurant__coupon"></div>
-
-
-  </section>
-
-
-  <section class="popular">
-    <div class="popular__brand">
-      <img src="" alt="" class="popular__brand__thump">
-      <div class="popular__brand__name">Domino's Pizza</div>
-      <div class="popular__brand__delivery-time">30 mins</div>
-    </div>
-  </section>
-
-
-  <section class="navbar">
-    <ul class="navbar__list">
-      <li class="navbar__item">Swiggy</li>
-      <li class="navbar__item">Search</li>
-      <li class="navbar__item">Cart</li>
-      <li class="navbar__item">Account</li>
-    </ul>
-  </section>
-
-</body>
+  </body>
 </html>
