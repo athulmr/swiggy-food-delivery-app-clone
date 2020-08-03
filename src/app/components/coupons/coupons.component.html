@@ -3,9 +3,17 @@
     <h1 class="coupons__title">
       Coupons For You
     </h1>
-    <div class="coupons__card">
-      <img src="" alt="" class="coupons__card__thump">
-      <div class="coupons__card__name">Upto 50% off</div>
-      <div class="coupons__card__code">Swiggyit</div>
-    </div>
+
+    <ul class="coupons__list">
+      <li class="coupons__list__item" *ngFor="let item of coupons">
+        <div class="coupons__list__item__thumb">
+          <img src="item.imgUrl" alt="" class="coupons__list__item__thumb_img" *ngIf="item.imgUrl">
+          <fa-icon class="coupons__list__item__thumb__icon" [icon]="faPercentage"></fa-icon>
+        </div>
+        <div class="coupons__list__item__info">
+          <div class="coupons__list__item__info__name">{{item.name}}</div>
+          <div class="coupons__list__item__info__code">{{item.code}}</div>
+        </div>
+      </li>
+    </ul>
   </section>

@@ -1,0 +1,10 @@
+<div class="ics">
+  <div class="ics__thumb" [ngClass]="{'ics__thumb--rounded' : rounded}">
+    <img [src]="imgUrl" alt="" class="ics__thumb__img" *ngIf="isDefined(imgUrl)">
+  </div>
+
+  <div class="ics__badge" *ngIf="isDefined(badge)">{{badge}}</div>
+  <div class="ics__name" *ngIf="isDefined(name)">{{name}}</div>
+  <div class="ics__time" *ngIf="isDefined(time)">{{time}}</div>
+</div>
+

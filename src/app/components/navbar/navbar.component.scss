@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: #fff;
+  border-top: .5px rgba(231, 230, 230, 0.7) solid;
+
+  &__list {
+    margin: 1rem 0;
+    display: flex;
+    overflow-x: auto;
+    list-style: none;
+    justify-content: space-around;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: .60rem;
+      text-transform: uppercase;
+      color: rgb(145, 143, 143);
+
+      &--active {
+        color: rgb(251, 94, 36);
+      }
+
+      fa-icon {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+}

@@ -1,19 +1,19 @@
 <section class="spotlight">
   <h1 class="spotlight__title">
+    <fa-icon [icon]="faStoreAlt"></fa-icon>
     In the Spotlight!
   </h1>
   <p class="spotlight__subtitle">
     Explore sponsored partner brands
   </p>
 
-  <img src="" alt="" class="spotlight__restaurant__thump">
-  <div class="spotlight__restaurant__discount">20% off</div>
-  <div class="spotlight__restaurant__name">Shanmukha Restaurant</div>
-  <div class="spotlight__restaurant__address">Lorem ipsum dolor sit amet consectetur.</div>
-  <div class="spotlight__restaurant__info">
-    4.2  |  32 mins | 300 for two
-  </div>
-  <div class="spotlight__restaurant__coupon"></div>
-
-
+  <ul class="spotlight__list">
+    <li class="spotlight__item" *ngFor="let item of restaurantInfos; let i = index">
+      <!-- {{restaurantInfos[i].name}} -->
+      <div *ngIf="i%2 === 0">
+        <app-restaurant-info [restaurantInfo]="restaurantInfos[i]"></app-restaurant-info>
+        <app-restaurant-info [restaurantInfo]="restaurantInfos[i+1]"></app-restaurant-info>
+      </div>
+    </li>
+  </ul>
 </section>

@@ -1,13 +1,12 @@
 <section class="top-picks">
   <h1 class="top-picks__title">
-    Top Picks For You
+    <fa-icon [icon]="faThumbsUp"></fa-icon>
+    Top picks for you
   </h1>
-  <div class="top-picks__restaurant">
-    <img src="" alt="" class="top-picks__restaurant__thump">
-    <div class="top-picks__restaurant__discount">
-      40% off
-    </div>
-    <p class="top-picks__restaurant__name">Lunch Box</p>
-    <p class="top-picks__restaurant__time">40mins</p>
-  </div>
+
+  <ul class="top-picks__list">
+    <li class="top-picks__list__item" *ngFor="let item of topPicks">
+      <app-info-card-small [imgUrl]="item.imgUrl" [name]="item.name" [time]="item.time" [badge]="item.badge"></app-info-card-small>
+    </li>
+  </ul>
 </section>

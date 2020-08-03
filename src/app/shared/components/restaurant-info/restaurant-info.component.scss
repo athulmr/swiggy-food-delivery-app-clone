@@ -1,0 +1,69 @@
+.restaurant {
+  display: flex;
+  margin-bottom: 3.2rem;
+
+  hr {
+    color: rgba(221, 219, 219, 0.1);
+    margin: .3rem;
+  }
+
+  &__thumb{
+    min-width: 5rem;
+    height: 6.5rem;
+    // background-color: honeydew;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+
+    &__img {
+      z-index: -1;
+      width: 15rem;
+      position: absolute;
+      top: -99px;
+      left: -99px;
+      right: -99px;
+      bottom: -99px;
+      margin: auto;
+    }
+
+    &__discount {
+      border: 1px lightcoral solid;
+      border-radius: 5px;
+      position: relative;
+      background-color: lightcoral;
+      z-index: 2;
+      top: 5.134rem;
+      text-align: center;
+      color: lightcyan;
+      margin: 0 .3rem 0 .3rem;
+    }
+  }
+
+  &__info{
+    margin: 0 1rem;
+    min-width: 60vw;
+
+    &__name {
+      text-transform: capitalize;
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+
+    &__address, &__stats {
+      font-size: .9rem;
+    }
+
+    &__stats {
+      font-weight: 600;
+    }
+  }
+
+  &__badge__list {
+    list-style: none;
+
+    &__item {
+      color: rgb(141, 140, 140);
+    }
+  }
+
+}

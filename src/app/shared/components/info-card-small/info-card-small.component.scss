@@ -1,0 +1,49 @@
+.ics {
+  margin-right: .75rem;
+  width: 4.7rem;
+  text-align: center;
+
+  &__thumb {
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    height: 4.7rem;
+    margin-bottom: .3rem;
+    overflow: hidden;
+    position: relative;
+
+
+    &__img {
+      z-index: -1;
+      width: 7rem;
+      position: absolute;
+      top: -99px;
+      left: -99px;
+      right: -99px;
+      bottom: -99px;
+      margin: auto;
+    }
+
+    &--rounded {
+      border-radius: 50%;
+    }
+  }
+
+  &__badge {
+    position: relative;
+    top: -10px;
+    width: 80%;
+    height: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    background-color: orangered;
+    color: #fff;
+  }
+
+  &__time {
+    color: rgb(167, 167, 167);
+    font-size: .85rem;
+  }
+}

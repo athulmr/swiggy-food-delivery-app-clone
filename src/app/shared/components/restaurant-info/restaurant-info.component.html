@@ -1,0 +1,28 @@
+<div class="restaurant" *ngIf="restaurantInfo">
+  <div class="restaurant__thumb" *ngIf="restaurantInfo.imgUrl !== 'undefined'">
+    <img [src]="restaurantInfo.imgUrl" alt="" class="restaurant__thumb__img">
+    <div class="restaurant__thumb__discount">
+      {{ restaurantInfo.discount }}% off
+    </div>
+  </div>
+  <div class="restaurant__info">
+    <div class="restaurant__info__name">
+      {{ restaurantInfo.name }}
+    </div>
+    <div class="restaurant__info__address">
+      {{ restaurantInfo.address }}
+    </div>
+    <div class="restaurant__info__stats">
+      {{ restaurantInfo.rating }} | {{ restaurantInfo.deliveryTime }} mins |
+      {{ restaurantInfo.costForTwo }} for two
+    </div>
+
+    <hr />
+
+    <ul class="restaurant__badge__list">
+      <li class="restaurant__badge__list__item">
+        Use SWIGGYIT
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.location {
+
+  margin: 1rem 0;
+
+  &__title {
+    font-weight: 800;
+  }
+
+  &__address {
+    font-size: .9rem;
+    text-transform: capitalize;
+  }
+
+  &__offers {
+    position: absolute;
+    font-weight: 600;
+    right: 1rem;
+    top: 2rem;
+  }
+}

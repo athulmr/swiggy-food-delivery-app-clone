@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faMapMarkerAlt, faSearch, faShoppingBag, faUserAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,11 @@ import { Component, OnInit } from '@angular/core';
 
 })
 export class NavbarComponent implements OnInit {
+
+  faMapMarkerAlt = faMapMarkerAlt;
+  faSearch = faSearch;
+  faShoppingBag = faShoppingBag;
+  faUserAlt = faUserAlt;
 
   constructor() { }
 

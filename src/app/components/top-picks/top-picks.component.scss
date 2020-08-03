@@ -1,0 +1,13 @@
+.top-picks {
+  &__title {
+    text-transform: capitalize;
+  }
+
+  &__list {
+    margin: 1rem 0;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+
+  }
+}
